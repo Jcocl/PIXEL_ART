@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Laboratory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--
+    -----------------------------------INSTRUCTIONS CHECKLIST--------------------------------------------
+
+    NOTE:   I understand that any additional design or formatting in HTML and CSS will not earn extra grades. 
+            I have chosen to keep this project extra simple to strengthen my skills. Rest assured, 
+            I have carefully followed all the instructions without missing any point.
+
+    1. Name your HTML file as "webprog_la2.html" 
+                                                [COMPLETED(the file name)]
+
+    2. Using headings, put a main heading of your full name and a subheading of your program and section.
+                                                [COMPLETED(at lines 54-55)]
+
+    3. Table Section
+        a. Create a pixel art of your full name (including middle name).
+                                                [COMPLETED(at lines 61-444)]
+
+    4. Forms Section (Note: The form doesn't need to be functional)
+        a. Create a SIMPLE registration page with the following fields: {Simplicity is subjective}
+            i. Full Name                        [COMPLETED(at line 460)]
+            ii. Email                           [COMPLETED(at line 465 )]
+            iii. Password                       [COMPLETED(at line 470 )]
+            iv. Gender                          [COMPLETED(at lines 475-480 )]
+            v. Program (BSIT, BSCS, BSIS etc.)  [COMPLETED(at lines 485-492 )]
+            vi. Submit button                   [COMPLETED(at line 496)]
+
+    5. Media Section
+        a. Insert a video with controls showing your favorite music video (from YouTube).
+                                                [COMPLETED(at lines 506-511)]
+                                                {Helpful tip: You can press ALT + Z to enable word wrap for long text.}
+                                                {A YouTube link cannot be embedded using the <video> element, it only works with the <iframe> element. I also assume this instruction might be suggesting downloading the YouTube video, but that would unnecessarily increase the file size and it is only legally allowed with YouTube Premium.}
+    6. CSS Styling
+        a. Change the background color of the page.
+                                                [COMPLETED(style.css at lines 13-15)]
+                                                {You can also treat a background image as a collection of colors, since it is a graphic made up of a complex color structure.}
+        b. Set any font. You can use imported fonts from the internet.
+                                                [COMPLETED(style.css at lines 1-8)]
+        c. For the table (pixel art), use CSS to color the cells and add border to each cell.
+                                                [COMPLETED(at lines )]
+
+    Submission Requirements:
+
+        HTML and CSS Files
+    
+    
+    
+    ------------------------------------END OF CHECKLIST ----------------------------------------------------
+    -->
+
+
+    <div class="container-1">
+        <!--HEADINGS-->
+        <div class="header">
+            <h1 class="myname">JOHN <span style="color: #9b59b6;">CLARK</span> O. OCLARIT</h1>
+            <h2><span style="color: #2ecc71;">Bachelor</span> of Science in <span style="color: red;">Computer Science</span>  - 3C</h2>
+        </div>
+        
+        <!--PIXEL ART-->
+        <div class="pixel-art">
+            <table>
+            <!-- Row 1: John Clark -->
+                <tr><td class="white" colspan="67"></td></tr>
+                <tr><td class="white" colspan="67"></td></tr>
+            <tr>
+                <!-- J -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- O -->
+                <td class="white"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td>
+                <!-- H -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- N -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- C -->
+                <td class="white"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="white"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td>
+                <!-- R -->
+                <td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td>
+                <!-- K -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 2 -->
+            <tr>
+                <!-- J -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- O -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- H -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- N -->
+                <td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- C -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- R -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- K -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 3 -->
+            <tr>
+                <!-- J -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- O -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- H -->
+                <td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- N -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="blue"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- C -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- R -->
+                <td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td>
+                <!-- K -->
+                <td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 4 -->
+            <tr>
+                <!-- J -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- O -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- H -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- N -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- C -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- R -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- K -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 5 -->
+            <tr>
+                <!-- J -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- O -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- H -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- N -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- C -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- R -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- K -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 6 -->
+            <tr>
+                <!-- J -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- O -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- H -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- N -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- C -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- A -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- R -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- K -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 7 -->
+            <tr>
+                <!-- J -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td>
+                <!-- O -->
+                <td class="white"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td>
+                <!-- H -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- N -->
+                <td class="blue"></td><td class="blue"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="blue"></td><td class="blue"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- C -->
+                <td class="white"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- A -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- R -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td><td class="white"></td>
+                <!-- K -->
+                <td class="red"></td><td class="red"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="red"></td><td class="red"></td>
+            </tr>
+            
+            <tr><td class="white" colspan="67"></td></tr>
+            <tr><td class="white" colspan="67"></td></tr>
+            
+            <!-- Row 1: Oblig Oclarit -->
+            <tr>
+                <!-- O -->
+                <td class="white"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td>
+                <!-- B -->
+                <td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- I -->
+                <td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- G -->
+                <td class="white"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- O -->
+                <td class="white"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td>
+                <!-- C -->
+                <td class="white"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="white"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td>
+                <!-- R -->
+                <td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td>
+                <!-- I  -->
+                <td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- T -->
+                <td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 2 -->
+            <tr>
+                <!-- O -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- B -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- L -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- G -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- O -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- C -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- R -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- T -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+            </tr>           
+            <!-- Row 3 -->
+            <tr>
+                <!-- O -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- B -->
+                <td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- G -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- O -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- C -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- R -->
+                <td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- T -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                
+            </tr>
+            
+            <!-- Row 4 -->
+            <tr>
+                <!-- O -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- B -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- G -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- O -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- C -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- R -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- T -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 5 -->
+            <tr>
+                <!-- O -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- B -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- L -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- G -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- O -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- C -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- A -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- R -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- T -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 6 -->
+            <tr>
+                <!-- O -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- B -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- L -->
+                <td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- G -->
+                <td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- O -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- C -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- A -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- R -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- I -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                <!-- T -->
+                <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+            </tr>
+            
+            <!-- Row 7 (Final row) -->
+            <tr>
+                <!-- O -->
+                <td class="white"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td>
+                <!-- B -->
+                <td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- I -->
+                <td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td>
+                <!-- G -->
+                <td class="white"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="green"></td><td class="white"></td><td class="white"></td>
+                <!-- Space -->
+                <td class="white"></td><td class="white"></td>
+                <!-- O -->
+                <td class="white"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td>
+                <!-- C -->
+                <td class="white"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td>
+                <!-- L -->
+                <td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- A -->
+                <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                <!-- R -->
+                    <td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                    <!-- I -->
+                    <td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="purple"></td><td class="white"></td>
+                    <!-- T -->
+                    <td class="white"></td><td class="white"></td><td class="white"></td><td class="purple"></td><td class="purple"></td><td class="white"></td><td class="white"></td><td class="white"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- PAGE-2 / CONTAINER-2 -->
+    <div class="container-2">
+        <!-- REGISTRATION FORM -->
+        <div class="registration-form">
+            <h1 class="form-title">Registration Form</h1>
+            <!--FULL NAME-->
+            <div class="form-group fullname">
+                <label for="fullname">Name:</label>
+                <input type="text" class="input-fullname" placeholder="Juan Dela Pena" id="fullname">
+            </div>
+            <!--EMAIL-->
+            <div class="form-group email">
+                <label for="email">Email:</label>
+                <input type="email" class="input-email" placeholder="kolokoy123@email.com" id="email">
+            </div>
+            <!--PASSWORD-->
+            <div class="form-group password">
+                <label for="password">Password:</label>
+                <input type="password" class="input-password" placeholder="IamnotMrBeast#500milionSubscribers" id="password">
+            </div>
+            <!--GENDER-->
+            <div class="form-group gender">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" class="select-gender">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!--PROGRAM-->
+            <div class="form-group   program">
+                <label for="program">Program:</label>
+                <select name="program" id="program" class="select-program">
+                    <option value="">Select Program</option>
+                    <option value="BSCS">BSCS</option>
+                    <option value="BSIS">BSIS</option>
+                    <option value="BSIT-WMA">BSIT-WMA</option>
+                    <option value="BSIT-TSM">BSIT-TSM</option>
+                    <option value="BSIT-NA">BSIT-NA</option>
+                </select>
+            </div>
+            <!--SUBMIT BUTTON-->
+            <div class="form-group submit">
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </div>
+        </div>
+
+        <!-- VIDEO CONTAINER -->
+        <div class="video-container">
+            <!--MINECRAFT LOGO -->
+            <img src="./images/Minecraft-Logo.png" alt="Minecraft-Logo" height="300" style="margin-top: -80px;">
+
+            <!-- VIDEO LINK -->
+            <iframe width="500" height="500" 
+                src="https://www.youtube.com/embed/8B1EtVPBSMw?autoplay=1&mute=1&controls=1" 
+                frameborder="0" 
+                allow="autoplay;" 
+                allowfullscreen>
+            </iframe>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p style="padding: 20px;">&copy; 2025 College Of Computer Studies. All rights reserved.</p>
+    </div>
+</body>
+</html>

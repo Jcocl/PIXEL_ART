@@ -97,7 +97,7 @@
 
         .registration-form{
             background: linear-gradient(to bottom, #77A249 0%, #6B8E23 20%, #8B4513 60%, #5C3317 100%);
-            height: 750px;
+            height: 700px;
             width: 450px;
             margin-top: 150px;
             border-radius: 10px;
@@ -158,7 +158,7 @@
         }
 
         .video-container{
-            height: 750px;
+            height: 700px;
             width: 550px;
             background: linear-gradient(160deg,#77A249,#6B8E23, #8b5a2b, #7a5230, #5b3a1e, #4a2f16);
             margin-top: 150px;
@@ -182,3 +182,4 @@
             font-family: 'Roboto';
             font-size: 95%;
         }
+
